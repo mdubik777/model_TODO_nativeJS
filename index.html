@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=1460" />
+    <title>popup</title>
+
+    <!--<link rel="stylesheet"  href="css/select2.css" />-->
+    <link rel="stylesheet" href="css/css.css" />
+
+
+</head>
+<body>
+    <div class="wrapper">
+        <div class="in-box">
+            <button id="show-popup" class="btn add-new-user btn-action">Добавить пользователя</button>
+            <div class="users-list-wrapper">
+                <ul id="user-table-list">
+                    <li class="head">
+                        <div class="data-box">
+                        <span>
+                            <span class="custom-checkbox head-checkbox">
+                                <input type="checkbox" id="ckb-all" />
+                                <label for="ckb-all">
+                                    <i class="icon-checkmark"></i>
+                                </label>
+                            </span>
+                        </span>
+                            <span>Имя</span>
+                            <span>Фамилия</span>
+                            <span>Возраст</span>
+                            <span>Подписка</span>
+                            <span>Пол</span>
+                            <span>Сообщение</span>
+                        <span>
+                            <button class="btn delete-users delete-selected-users-js" disabled>Удалить пользователей</button>
+                        </span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="black" id="blackout">
+
+        <!-------------------------------------------------------------------
+                        Popup
+        --------------------------------------------------------------------->
+
+
+        <div class="popup-in-box" id="popup-box">
+            <div class="close-popup">
+                <span class="closed close-popup-action">X</span>
+            </div>
+            <div class="form-box">
+                <div class="row">
+                    <label class="label" for="name">Введите имя</label>
+                    <input id="name" class="txt-field user-name-action" type="text" placeholder="" >
+                </div>
+                <div class="row">
+                    <label  class="label" for="surname">Введите фамилию</label>
+                    <input id="surname" class="txt-field user-surname-action" type="text"/>
+                </div>
+                <div class="row">
+                    <label  class="label" for="age">Введите возраст</label>
+                    <input id="age" class="txt-field  user-age-action" type="text"/>
+                </div>
+                <div class="row">
+                    <label  class="label" for="message">Введите сообщение</label>
+                    <textarea id="message" class="txt-field user-message-action" cols="20" rows="7"></textarea>
+                </div>
+
+                <!-----------------------------------------------------------
+                Checkbox
+                -------------------------------------------------------------->
+
+
+                <div class="checkbox-js">
+                    <div class="row">
+                        <span class="custom-checkbox">
+
+                            <input type="checkbox" id="add-info" class="delivery-action" />
+                            <label for="add-info">
+                                <i class="icon-checkmark"></i>
+                                <span>Подписаться на рассылку</span>
+                            </label>
+                        </span>
+                    </div>
+                </div>
+
+                <!-----------------------------------------------------------
+                Radio
+                -------------------------------------------------------------->
+
+
+
+                <div class="add-info-radio" id="add-info-radio-js">
+                    <div class="row">
+                        <span class="custom-radio">
+                            <input type="radio" id="male-radio" class="gender-action" name="sex" checked />
+                            <label for="male-radio">
+                                <i></i>
+                                <span>Мужчина</span>
+                            </label>
+                        </span>
+                        <span class="custom-radio">
+                            <input type="radio" id="female-radio" class="gender-action" name="sex" />
+                            <label for="female-radio">
+                                <i></i>
+                                <span>Женщина</span>
+                            </label>
+                        </span>
+                    </div>
+                </div>
+
+                <!-----------------------------------------------------------
+                Select2
+                -------------------------------------------------------------->
+
+                <!--<div class="row">-->
+                    <!--<div class="select-wrapper">-->
+                        <!--<select class="select select-action-js w250" data-placeholder="Выберите город">-->
+                            <!--<option value=""></option>-->
+                            <!--<option value="1">Москва</option>-->
+                            <!--<option value="2">Санкт-Петербург</option>-->
+                            <!--<option value="3">Калуга</option>-->
+                            <!--<option value="4">Ростов-на-Дону</option>-->
+                            <!--<option value="5">Саратов</option>-->
+                        <!--</select>-->
+                    <!--</div>-->
+                <!--</div>-->
+
+                <!-------------------------------------------------------------
+                    Button
+                ------------------------------------------------------------------>
+
+                <div class="button">
+                    <button class="btn popup-btn send-popup-action">отправить</button>
+                    <button class="btn save-edition-action">Сохранить изменения</button>
+                    <button class="btn close-popup-action cancel-popup-action">Отменить</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--<script type="text/javascript" src="js/jquery.js"></script>-->
+    <!--<script type="text/javascript" src="js/select2.full.min.js"></script>-->
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
